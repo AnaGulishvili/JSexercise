@@ -15,10 +15,10 @@ for (let item of array1) {
     }
 }
 
-//დავალება 3 რიცხვი 5-არის
+//დავალება 3 რიცხვი 5 არის
 let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-for(let item2 of array2) {
+for (let item2 of array2) {
     if (item2 = 5) {
         console.log("არის");
     }
@@ -27,7 +27,7 @@ for(let item2 of array2) {
 //დავალება 4 ჯამი
 
 let array3= [1, 2, 3, 4, 5];
-let sum= null;
+let sum= 0;
 for (let item3=0; item3 < array3.length; item3++) {
     sum += array3[item3];
 
@@ -50,10 +50,9 @@ console.log(mean);
 let array5 = [1, 2, 3, 7, 6, 9];
 
 for(let item6 of array5) {
-   if(item6 !=7) {
-   console.log(item6);
-}
-else continue;
+   if(item6 == 7) {
+   continue;
+    }
 }
 
 //დავალება 7 სტუდენტის სტატუსი
@@ -84,5 +83,37 @@ let log =
 
     console.log(log);
 
-    //დავალება 9
+    //დავალება 9 მხოლოდ დადებითი რიცხვები:
+
+    let array6 = [
+        [2, -3, 5, 10],
+        [25, -24, -11, 100],
+        [-6, -7, 10],
+      ];
     
+    for(let singles2 of array6) {
+        for (item7 of singles2) {
+            if (item7 > 0) {
+                console.log(item7);
+            }
+        }
+    }
+
+
+
+//დავალება 10 მხოლოდ კენტი რიცხვები, მხოლოდ ლუწი რიცხვები
+
+let array = [ 2, 3, 5, 10,25,24,11, 100 , 6,7, 10 ]
+
+//ლუწები
+for (odds of array) {
+    if (odds % 2 ==1 && odds != 0) {
+        console.log(odds);
+    } 
+}
+//კენტები
+for (evens of array) {
+    if (evens % 2 ==0 && evens != 0) {
+        console.log(evens);
+    } 
+}
